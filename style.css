@@ -1,0 +1,422 @@
+
+/* RESET DAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f9fc;
+    color: #29476e;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #587fa7, #426d9e);
+    color: white;
+    padding: 14px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* KONTEN UTAMA */
+main {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e7eff8;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 15px rgba(68, 104, 146, 0.05);
+}
+
+/* PROFIL */
+.profile {
+    background: linear-gradient(120deg, #e9f2fb, #f0f6fc);
+    padding: 35px 5%;
+    border-radius: 12px;
+    margin-bottom: 22px;
+}
+
+.profile-top {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+.photo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 3px 15px rgba(57, 89, 125, 0.12);
+}
+
+.greeting {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #5076a1;
+    margin-bottom: 8px;
+}
+
+.profile-info h1 {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 36px;
+    color: #416b9b;
+    margin-bottom: 8px;
+}
+
+.underline {
+    width: 65px;
+    height: 3px;
+    background: #7196bd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* TABEL BIODATA */
+.biodata-table {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px 24px;
+    border-radius: 14px;
+}
+
+.biodata-row {
+    display: grid;
+    grid-template-columns: 35px 200px 20px 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e7eef7;
+}
+
+.biodata-row:last-child {
+    border-bottom: none;
+}
+
+.biodata-icon {
+    font-size: 21px;
+    color: #426c9b;
+}
+
+.colon {
+    color: #8db4df;
+}
+
+/* JUDUL BAGIAN */
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.section-icon {
+    background: #d8e7f7;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.section-title h2 {
+    font-size: 27px;
+    font-family: "Comic Sans MS", cursive;
+    color: #5079a5;
+}
+
+.section-title .underline {
+    margin-top: 7px;
+    margin-bottom: 0;
+    width: 50px;
+}
+
+/* HOBI */
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #edf4fc;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.hobby span {
+    font-size: 23px;
+}
+
+/* TABEL PENDIDIKAN */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #d9e7f7;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 550px;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    border-right: 1px solid #dce8f5;
+    border-bottom: 1px solid #dce8f5;
+    text-align: left;
+}
+
+th {
+    background: #e7f1fc;
+    color: #285b97;
+    text-align: center;
+}
+
+td:first-child,
+td:last-child {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f3f7fc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+
+/* PESAN */
+.message-section {
+    text-align: center;
+}
+
+.message-section .section-title {
+    text-align: left;
+}
+
+.message-description {
+    color: #6488b5;
+    font-size: 14px;
+    margin: 8px 0 16px;
+}
+
+.message-button {
+    background: linear-gradient(120deg, #527eaf, #3e6fa6);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(57, 97, 145, 0.25);
+}
+
+.pesan-box {
+    background: #edf5ff;
+    border: 1px solid #e0edfc;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 16px auto 0;
+    max-width: 750px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #edf3fa;
+    color: #6689b5;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE UNTUK TABLET DAN HP */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 2px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    .profile {
+        padding: 22px 15px;
+    }
+
+    .profile-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .photo {
+        width: 175px;
+        height: 175px;
+    }
+
+    .profile-info h1 {
+        font-size: 29px;
+    }
+
+    .profile-info .underline {
+        margin: 0 auto 15px;
+    }
+
+    .biodata-table {
+        padding: 10px 14px;
+    }
+
+    .biodata-row {
+        grid-template-columns: 28px 105px 10px 1fr;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .biodata-icon {
+        font-size: 17px;
+    }
+
+    .card {
+        padding: 18px 14px;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        gap: 12px;
+    }
+
+    .section-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    .hobby-list {
+        gap: 9px;
+    }
+
+    .hobby {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .hobby span {
+        font-size: 19px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* HP LAYAR KECIL */
+@media (max-width: 380px) {
+    .biodata-row {
+        grid-template-columns: 24px 80px 8px 1fr;
+        font-size: 11px;
+    }
+
+    .profile-info h1 {
+        font-size: 25px;
+    }
+
+    .hobby {
+        padding: 9px 11px;
+    }
+}

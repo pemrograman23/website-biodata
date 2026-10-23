@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata - Imelda Maryani</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">My Biodata ♡</div>
+
+        <nav>
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PROFIL DAN BIODATA -->
+        <section class="profile" id="beranda">
+
+            <div class="profile-top">
+
+                <div class="photo-area">
+                    <img src="images/foto.jpg"
+                         alt="Foto Imelda Maryani"
+                         class="photo">
+                </div>
+
+                <div class="profile-info" id="tentang">
+                    <p class="greeting">HALO, AKU</p>
+                    <h1>Imelda Maryani</h1>
+                    <div class="underline"></div>
+                </div>
+
+            </div>
+
+            <!-- DATA DIRI -->
+            <div class="biodata-table">
+
+       
+
+                <div class="biodata-row">
+                    <span class="biodata-icon">🎓</span>
+                    <span>NIM</span>
+                    <span class="colon">:</span>
+                    <span>24552011231</span>
+                </div>
+
+                <div class="biodata-row">
+                    <span class="biodata-icon">▣</span>
+                    <span>Program Studi</span>
+                    <span class="colon">:</span>
+                    <span>Teknik Informatika</span>
+                </div>
+
+                <div class="biodata-row">
+                    <span class="biodata-icon">📍</span>
+                    <span>Alamat</span>
+                    <span class="colon">:</span>
+                    <span>Ds. Sumbersari, Kec. Kiarapedes, Kab. Purwakarta</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HOBI -->
+        <section class="card" id="hobi">
+
+            <div class="section-title">
+                <div class="section-icon">♡</div>
+                <div>
+                    <h2>Hobi Saya</h2>
+                    <div class="underline"></div>
+                </div>
+            </div>
+
+            <div class="hobby-list">
+                <div class="hobby">
+                    <span>♫</span> Mendengarkan musik
+                </div>
+
+                <div class="hobby">
+                    <span>♧</span> Membaca
+                </div>
+
+                <div class="hobby">
+                    <span>📷</span> Fotografi
+                </div>
+
+                <div class="hobby">
+                    <span>🏋</span> Menggambar
+                </div>
+            </div>
+
+        </section>
+
+        <!-- RIWAYAT PENDIDIKAN -->
+        <section class="card" id="pendidikan">
+
+            <div class="section-title">
+                <div class="section-icon">🎓</div>
+                <div>
+                    <h2>Riwayat Pendidikan</h2>
+                    <div class="underline"></div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Jenjang Pendidikan</th>
+                            <th>Nama Sekolah</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SD</td>
+                            <td>SD Negeri 1 Sumbersari</td>
+                            <td>2012 - 2018</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>SMP</td>
+                            <td>SMP Negeri 1 Wanayasa</td>
+                            <td>2018 - 2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>SMA/SMK</td>
+                            <td>SMA Negeri 1 Wanayasa</td>
+                            <td>2021 - 2024</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Perguruan Tinggi</td>
+                            <td>Universitas Teknologi Bandung</td>
+                            <td>2024 - sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- PESAN -->
+        <section class="card message-section" id="kontak">
+
+            <div class="section-title">
+                <div class="section-icon">☏</div>
+                <div>
+                    <h2>Pesan untuk Kamu</h2>
+                    <div class="underline"></div>
+                </div>
+            </div>
+
+ 
+
+            <button class="message-button" id="tombolPesan">
+                Tampilkan Pesan
+            </button>
+
+            <div id="pesan" class="pesan-box" hidden>
+                Halo! Terima kasih sudah mengunjungi website biodata saya 😊
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Imelda Maryani &nbsp; ♡
+    </footer>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
